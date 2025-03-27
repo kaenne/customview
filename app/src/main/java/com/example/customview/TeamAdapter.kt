@@ -5,6 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 
 class TeamAdapter(
@@ -32,6 +33,14 @@ class TeamAdapter(
             team.logoName, "mipmap", holder.itemView.context.packageName
         )
         holder.ivLogo.setImageResource(logoId)
+
+        holder.itemView.setOnClickListener {
+            Toast.makeText(
+                holder.itemView.context,
+                "Команда: ${team.name}\nРейтинг: ${team.hltvRating}",
+                Toast.LENGTH_SHORT
+            ).show()
+        }
     }
 
     override fun getItemCount(): Int = teams.size
