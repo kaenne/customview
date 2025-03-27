@@ -17,7 +17,7 @@
             android:layout_height="30dp"
             android:gravity="center"
             android:textColor="#FF5722"
-            android:textSize="18sp"
+            android:textSize="16sp"
             android:textStyle="bold" />
 
         <ImageView
@@ -35,7 +35,7 @@
             android:textSize="16sp" />
     </LinearLayout>
 
-    <!-- Вторая строка: rating -->
+    <!-- Вторая строка: рейтинг -->
     <TextView
         android:id="@+id/tvRating"
         android:layout_width="match_parent"
@@ -44,4 +44,16 @@
         android:layout_marginTop="4dp"
         android:textColor="#4CAF50"
         android:textSize="14sp" />
+
+    <!-- Третья строка: список игроков (мелким шрифтом) -->
+    <TextView
+        android:id="@+id/tvPlayers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="2dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="#888888"
+        android:textSize="12sp" />
 </LinearLayout>

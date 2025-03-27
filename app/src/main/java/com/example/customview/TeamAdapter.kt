@@ -17,6 +17,7 @@ class TeamAdapter(
         val ivLogo: ImageView = itemView.findViewById(R.id.iv_logo)
         val tvName: TextView = itemView.findViewById(R.id.tv_name)
         val tvPoints: TextView = itemView.findViewById(R.id.tvRating)
+        val tvPlayers: TextView = itemView.findViewById(R.id.tvPlayers) // Добавляем поиск tvPlayers
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -36,6 +37,9 @@ class TeamAdapter(
             team.logoName, "mipmap", holder.itemView.context.packageName
         )
         holder.ivLogo.setImageResource(logoId)
+
+        // Добавляем список игроков, разделяя их " • "
+        holder.tvPlayers.text = team.players.joinToString(" • ")
 
         holder.itemView.setOnClickListener {
             Toast.makeText(

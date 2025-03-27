@@ -16,17 +16,78 @@ class MainActivity : AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager(this)
 
         val teams = listOf(
-            Team("Team Spirit", "ts_logo", 1, 921),
-            Team("Team Vitality", "vitality_logo", 2, 834),
-            Team("Natus Vincere", "navi_logo", 3, 545),
-            Team("MOUZ", "mouz_logo", 4, 499),
-            Team("Eternal Fire", "ef_logo", 5, 482),
-            Team("The MongolZ", "mongolz_logo", 6, 462),
-            Team("G2", "g2_logo", 7, 424),
-            Team("FaZe", "faze_logo", 8, 350),
-            Team("Liquid", "liquid_logo", 9, 242),
-            Team("Falcons", "falcons_logo", 10, 235)
+            Team(
+                "Team Spirit",
+                "ts_logo",
+                1,
+                921,
+                listOf("donk", "sh1ro", "magixx", "chopper", "zont1x")
+            ),
+            Team(
+                "Team Vitality",
+                "vitality_logo",
+                2,
+                834,
+                listOf("ZywOo", "ropz", "flameZ", "apEX", "mezii")
+            ),
+            Team(
+                "Natus Vincere",
+                "navi_logo",
+                3,
+                545,
+                listOf("w0nderful", "b1t", "jL", "iM", "Aleksib")
+            ),
+            Team(
+                "MOUZ",
+                "mouz_logo",
+                4,
+                499,
+                listOf("frozen", "xertioN", "torzsi", "siuhy", "Jimpphat")
+            ),
+            Team(
+                "Eternal Fire",
+                "ef_logo",
+                5,
+                482,
+                listOf("XANTARES", "woxic", "Wicadia", "MAJ3R", "jottAAA")
+            ),
+            Team(
+                "The MongolZ",
+                "mongolz_logo",
+                6,
+                462,
+                listOf("blitz", "Techno", "Senzu", "mzinho", "910")
+            ),
+            Team(
+                "G2",
+                "g2_logo",
+                7,
+                424,
+                listOf("Snax", "huNter-", "malbsMd", "m0NESY", "HeavyGod")
+            ),
+            Team(
+                "FaZe",
+                "faze_logo",
+                8,
+                350,
+                listOf("karrigan", "rain", "EliGE", "frozen", "broky")
+            ),
+            Team(
+                "Liquid",
+                "liquid_logo",
+                9,
+                242,
+                listOf("jks", "NAF", "NertZ", "Twistzz", "ultimate")
+            ),
+            Team(
+                "Falcons",
+                "falcons_logo",
+                10,
+                235,
+                listOf("NiKo", "Magisk", "TeSeS", "degster", "kyxsan")
+            )
         )
+
 
         recyclerView.adapter = TeamAdapter(teams)
 
