@@ -20,7 +20,12 @@ class MainActivity : AppCompatActivity() {
             Team("Team Vitality", "vitality_logo", 2, 834),
             Team("Natus Vincere", "navi_logo", 3, 545),
             Team("MOUZ", "mouz_logo", 4, 499),
-            Team("Eternal Fire", "ef_logo", 5, 482)
+            Team("Eternal Fire", "ef_logo", 5, 482),
+            Team("The MongolZ", "mongolz_logo", 6, 462),
+            Team("G2", "g2_logo", 7, 424),
+            Team("FaZe", "faze_logo", 8, 350),
+            Team("Liquid", "liquid_logo", 9, 242),
+            Team("Falcons", "falcons_logo", 10, 235)
         )
 
         recyclerView.adapter = TeamAdapter(teams)
