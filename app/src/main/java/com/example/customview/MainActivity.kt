@@ -2,6 +2,8 @@ package com.example.customview
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -22,5 +24,11 @@ class MainActivity : AppCompatActivity() {
         )
 
         recyclerView.adapter = TeamAdapter(teams)
+
+        recyclerView.addItemDecoration(
+            DividerItemDecoration(this, DividerItemDecoration.VERTICAL).apply {
+                setDrawable(ContextCompat.getDrawable(this@MainActivity, R.drawable.divider_gray)!!)
+            }
+        )
     }
 }
