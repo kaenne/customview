@@ -4,7 +4,6 @@
     android:orientation="horizontal"
     android:padding="16dp">
 
-    <!-- Рейтинг -->
     <TextView
         android:id="@+id/tv_rank"
         android:layout_width="30dp"
@@ -14,14 +13,12 @@
         android:textSize="18sp"
         android:textStyle="bold"/>
 
-    <!-- Логотип -->
     <ImageView
         android:id="@+id/iv_logo"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="8dp"/>
 
-    <!-- Название команды -->
     <TextView
         android:id="@+id/tv_name"
         android:layout_width="match_parent"
@@ -29,4 +26,13 @@
         android:layout_marginStart="12dp"
         android:gravity="center_vertical"
         android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tvRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="#4CAF50"
+        android:textSize="14sp" />
+
 </LinearLayout>
